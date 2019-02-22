@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Login and Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f4f7f7;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #5990ea;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+<body>
+<ul><li><a href="index.html" class="active">Home</a></li>
+						<li><a href="about.html" class="scroll">About</a></li>    
+						<li><a href="Blogin.html" class="scroll">Manager Login</a></li>  
+						<li><a href="Login.html" class="scroll">Customer Login</a></li>    
+						<li><a href="register.html" class="scroll">Register</a></li>    	
+					</ul>
+<div class="register-page">
+<div class="form">
+<form class="register-form" action="register.php" method="post">
+<h1>Register here </h1>
+<input type="text" placeholder="user name" name="username" required />
+<input type="password" placeholder="password" name="password" required />
+<input type="text" placeholder="email id" name="email" required />
+<button>Create</button>
+<p class="message">Already Registered?<a href="Login.html">Login </a></p>
+</form>
+</div>
+</div>
+</body>
+</html>

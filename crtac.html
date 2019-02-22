@@ -1,0 +1,84 @@
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Account Creation</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="crtaccss.css">
+    </head>
+	<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f4f7f7;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #5990ea;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+    <body background="21.jpg"> 
+	<ul><li><a href="index.html" class="active">Home</a></li>
+						<li><a href="about.html" class="scroll">About</a></li>    
+						<li><a href="Blogin.html" class="scroll">Manager Login</a></li>  
+						<li><a href="Login.html" class="scroll">Customer Login</a></li>    
+						<li><a href="register.html" class="scroll">Register</a></li>    	
+					</ul>
+      <form action="crctac.php" method="post">
+      
+        <h1>Create a New Account</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Your basic info</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" required />
+          <label for="Occupation">Occupation:</label>
+          <input type="text" id="Occupation" name="Occupation" required />
+
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" required />
+          
+          <label for="mobile number">Mobile Number:</label>
+          <input type="text" id="mbno" name="mbno" required />
+          
+          <label>Age:</label>
+          <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18" class="light" required />Under 18</label><br>
+          <input type="radio" id="over_18" value="over_18" name="user_age"><label for="over_18" class="light">18 or older</label>
+        </fieldset>
+        
+        <fieldset>
+          <label for="Address">Address:</label>
+          <textarea id="Address" name="Address" required  /></textarea>
+        </fieldset>
+        <fieldset>
+        <label for="Income">Income per Annum:</label>
+        <select id="Income" name="user_Income" required />
+          <optgroup label="Income">
+            <option value="Below 1L " required />Below 1Lakh</option>
+            <option value="Less than 2L">Less than 2 Lakhs</option>
+            <option value="Above 2 lakhs">Above 2 lakhs</option>
+          </optgroup>
+          
+        </select>
+        
+                  
+        </fieldset>
+        <button type="submit">Submit Details</button>
+      </form>
+      
+    </body>
+</html>
